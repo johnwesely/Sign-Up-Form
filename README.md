@@ -1,2 +1,2 @@
 # Sign-Up-Form
-Sign-up from created for practice with styling forms in CSS.
+Sign-up from created for practice styling forms in CSS.
