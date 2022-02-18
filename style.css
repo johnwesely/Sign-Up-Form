@@ -1,0 +1,223 @@
+@font-face {
+    font-family: 'logo';
+    src: url("./fonts/neon-webfont.woff") format("woff"),
+         url("./fonts/neon-webfont.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+    font-size: 16px;
+    --button-color: #83141f;
+    --button-color-darken: #640f19;
+    --form-margin: 32px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+
+    width: 80vw;
+    height: 100vh;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    background-color: rgb(43, 43, 43);
+}
+
+.image-container {
+    position: relative;
+
+    background-image: url("./images/CoyneCrack1.jpg");
+    background-position: center;
+    background-size: cover;
+
+    width: 1000px; 
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-box {
+    position: absolute;
+    top: 15%;
+
+    background-color: rgba(0, 0, 0, .6);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+
+    height: 18%;
+    width: 100%;
+}
+
+.logo-box img {
+    color: white;
+    height: 4rem;
+}
+
+.logo-box p {
+    color: white;
+    font-family: "logo";
+    font-size: 2rem;
+}
+
+.photo-credit {
+    position: absolute;
+    bottom: 8px;
+    align-self: center;
+}
+
+.photo-credit p {
+    text-align: center;
+    color: white;
+}
+
+p a {
+    color: white;
+}
+
+p a:active {
+    color: rgb(196, 196, 196);
+}
+
+.form-container {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    gap: 16px;
+    
+    background-color: rgb(247, 247, 247);
+}
+
+.form-header {
+    font-size: 1.2rem;
+    line-height: 1.25;
+    padding-right: 200px;
+}
+
+.form-container form {
+    padding-left: var(--form-margin);
+    height: 35%;
+    background-color: white;
+}
+
+form h1 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+form label {
+    letter-spacing: .15rem;
+}
+
+.form-row {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.form-row div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    width: 300px;
+}
+
+.form-row input {
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+.form-row input:invalid {
+    border: 1px solid red;
+    box-shadow: none;
+}
+
+.form-container button {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: var(--form-margin);
+    width: 100px;
+    background-color: var(--button-color);
+    padding: 8px 64px;
+    border: none;
+    border-radius: 10px;
+}
+
+.form-container button:active {
+    background-color: var(--button-color-darken);
+}
+
+.form-container p {
+    margin-left: var(--form-margin);
+}
+
+.form-container p a {
+    color: var(--button-color);
+}
+
+.form-container p a:active {
+    color: var(--button-color-darken);
+}
